@@ -1,6 +1,27 @@
 apt update & apt upgrade
+apt install build-essential 
 
 apt install virtualbox
+
+wget https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
+dpkg -i megasync-xUbuntu_18.04_amd64.deb
+
+
+
+wget https://apps.ankiweb.net/downloads/current/anki-2.0.50-amd64.tar.bz2
+tar xvf anki-2.0.50-amd64.tar.bz2
+cd anki-2.0.50 && make install 
+apt install mplayer # needed for anki 
+
+#for Packettracer
+wget http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.8_amd64.deb
+dpkg -i libicu52_52.1-3ubuntu0.8_amd64.deb
+
+#Dev
+apt install emacs
+
 
 #Media 
 
@@ -8,18 +29,6 @@ apt install virtualbox
 apt install libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
 apt install ubuntu-restricted-extras
 
+#VLC
 apt install vlc
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
-dpkg -i megasync-xUbuntu_18.04_amd64.deb
-
-
-apt install build-essential 
-
-wget https://apps.ankiweb.net/downloads/current/anki-2.0.50-amd64.tar.bz2
-tar xvf anki-2.0.50-amd64.tar.bz2
-cd anki-2.0.50 && make install 
-apt install mplayer # needed for anki 
-
-#Deve
-apt install emacs
