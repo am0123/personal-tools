@@ -1,0 +1,2 @@
+Crypt with AES
+openssl enc -aes-256-cbc -in plaintext.txt -base64 -md sha1
